@@ -38,7 +38,7 @@ The `solve_ivp` function from the `scipy.integrate` module is a versatile tool f
 The Lorenz attractor is a famous example of chaos, originally derived from a simplified model of atmospheric convection. The system is governed by a set of nonlinear differential equations that exhibit chaotic behavior for certain parameter values. The Lorenz system illustrates how small differences in initial conditions can lead to vastly different outcomes.
 
 <p align="center">
-  <img src="./assets/lorenz_attractor.gif" alt="GIF 1" width="400"/>
+  <img src="./assets/lorenz-attractor/lorenz_attractor.gif" alt="GIF 1" width="400"/>
 </p>
 
 
@@ -47,11 +47,21 @@ The Lorenz attractor is a famous example of chaos, originally derived from a sim
 
 - You can generate several simulations of the Lorenz attractor simultaneously by modifying the n_simulations parameter.
 
+<p align="center">
+  <img src="./assets/lorenz-attractor/lorenz_attractor_2sim.gif" alt="GIF 1" width="400"/>
+  <img src="./assets/lorenz-attractor/lorenz_attractor_10sim.gif" alt="GIF 1" width="400"/>
+</p>
+
 ##### 2. Randomized or Perturbed Initial Conditions
 
 - For randomized initial conditions, adjust the initial conditions block to generate random values within a range (e.g., np.random.rand for random values between [-10, 10]).
 - For perturbed initial conditions, start with a base condition and apply small random changes by modifying the perturbation variable.
 
+
+<p align="center">
+  <img src="./assets/lorenz-attractor/lorenz_attractor_100sim.gif" alt="GIF 1" width="400"/>
+  <img src="./assets/lorenz-attractor/lorenz_attractor_100sim_w_perturbation.gif" alt="GIF 1" width="400"/>
+</p>
 
 ##### 3. Customizable Parameters
 
@@ -59,23 +69,49 @@ The Lorenz attractor is a famous example of chaos, originally derived from a sim
 
 
 <p align="center">
-  <img src="./assets/lorenz_attractor_100sim.gif" alt="GIF 1" width="400"/>
-  <img src="./assets/lorenz_attractor_100sim_w_perturbation.gif" alt="GIF 1" width="400"/>
+  <img src="./assets/lorenz-attractor/lorenz_attractor_5sim_parm1.gif" alt="GIF 1" width="400"/>
+  <img src="./assets/lorenz-attractor/lorenz_attractor_5sim_parm2.gif" alt="GIF 1" width="400"/>
 </p>
+
 
 
 ### 4.2. **Double Pendulum**
 The double pendulum consists of two pendulums attached end-to-end. Despite its simple mechanical structure, it exhibits highly chaotic motion, especially for large initial displacements. This project numerically solves the equations of motion and generates an animation of the chaotic motion.
 
+
+
 <p align="center">
-  <img src="./assets/double_pendulum.gif" alt="GIF 1" width="350"/>
+  <img src="./assets/double-pendulum/double_pendulum_2sim.gif" alt="GIF 1" width="400"/>
+  <img src="./assets/double-pendulum/double_pendulum_10sim.gif" alt="GIF 1" width="400"/>
 </p>
+
+
+
+<p align="center">
+  <img src="./assets/double-pendulum/double_pendulum_10sim_w_perturbation.gif" alt="GIF 1" width="400"/>
+  <img src="./assets/double-pendulum/double_pendulum_50sim_w_perturbation.gif" alt="GIF 1" width="400"/>
+</p>
+
+
+<p align="center">
+  <img src="./assets/double-pendulum/double_pendulum_1sim_parm1.gif" alt="GIF 1" width="400"/>
+  <img src="./assets/double-pendulum/double_pendulum_1sim_parm2.gif" alt="GIF 1" width="400"/>
+</p>
+
+
 
 ### 4.3. **N-Body Problem**
 The N-body problem involves predicting the motion of `n` gravitationally interacting bodies in space. Despite the simplicity of Newton’s law of gravitation, the system behaves chaotically for most initial conditions. The gravitational interactions between the bodies are modeled using nonlinear differential equations, which we solve numerically to visualize their complex orbital dynamics.
 
 <p align="center">
-  <img src="./assets/three_body_problem.gif" alt="GIF 1" width="400"/>
+  <img src="./assets/n-body-problem/body_problem_3sim.gif" alt="GIF 1" width="400"/>
+</p>
+
+
+
+<p align="center">
+  <img src="./assets/n-body-problem/body_problem_3sim.gif" alt="GIF 1" width="400"/>
+  <img src="./assets/n-body-problem/body_problem_10sim.gif" alt="GIF 1" width="400"/>
 </p>
 
 
