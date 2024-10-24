@@ -45,57 +45,72 @@ The Lorenz attractor is a famous example of chaos, originally derived from a sim
 #### Features
 ##### 1. Multiple Simulations
 
-- You can generate several simulations of the Lorenz attractor simultaneously by modifying the n_simulations parameter.
+- Several simulations of the Lorenz attractor can be generate simultaneously by modifying the `n_simulations` parameter.
 
 <p align="center">
   <img src="./assets/lorenz-attractor/lorenz_attractor_2sim.gif" alt="GIF 1" width="400"/>
   <img src="./assets/lorenz-attractor/lorenz_attractor_10sim.gif" alt="GIF 1" width="400"/>
+  <br/> 2 Simulations (left) || 10 Simulations (right)
 </p>
+
 
 ##### 2. Randomized or Perturbed Initial Conditions
 
-- For randomized initial conditions, adjust the initial conditions block to generate random values within a range (e.g., np.random.rand for random values between [-10, 10]).
-- For perturbed initial conditions, start with a base condition and apply small random changes by modifying the perturbation variable.
+- For randomized initial conditions (IC) `case = 1`, adjust the initial conditions block to generate random values within a range (e.g., np.random.rand for random values between [-10, 10]).
+- For perturbed initial conditions `case = 2`, start with a base condition and apply small random changes by modifying the `perturbation` variable.
 
 
 <p align="center">
   <img src="./assets/lorenz-attractor/lorenz_attractor_100sim.gif" alt="GIF 1" width="400"/>
   <img src="./assets/lorenz-attractor/lorenz_attractor_100sim_w_perturbation.gif" alt="GIF 1" width="400"/>
+  <br/> 100 Simulations with randomized IC (left) || 100 Simulations with small perturbation in the IC (right)
 </p>
 
 ##### 3. Customizable Parameters
 
-- The system parameters such as the Prandtl number (sigma), Rayleigh number (rho), and geometric factor (beta) can be adjusted to explore different dynamical behaviors of the Lorenz system.
+- The system parameters such as the Prandtl number (`sigma`), Rayleigh number (`rho`), and geometric factor (`beta`) can be adjusted to explore different dynamical behaviors of the Lorenz system.
 
 
 <p align="center">
   <img src="./assets/lorenz-attractor/lorenz_attractor_5sim_parm1.gif" alt="GIF 1" width="400"/>
   <img src="./assets/lorenz-attractor/lorenz_attractor_5sim_parm2.gif" alt="GIF 1" width="400"/>
+  <br/> sigma = 10, beta = 8/3, rho = 13 (left) || sigma = 9.9, beta = 2.5, rho = 20 (right)
 </p>
 
 
-
 ### 4.2. **Double Pendulum**
-The double pendulum consists of two pendulums attached end-to-end. Despite its simple mechanical structure, it exhibits highly chaotic motion, especially for large initial displacements. This project numerically solves the equations of motion and generates an animation of the chaotic motion.
+The double pendulum consists of two pendulums attached end-to-end. Despite its simple mechanical structure, it exhibits highly chaotic motion, especially for large initial displacements. This project numerically solves the equations of motion and generates animations to visualize the chaotic behavior.
 
+#### Features
+##### 1. Multiple Simulations
 
+- Several simulations of the double pendulum can be generated simultaneously by modifying the `n_simulations` parameter.
 
 <p align="center">
   <img src="./assets/double-pendulum/double_pendulum_2sim.gif" alt="GIF 1" width="400"/>
   <img src="./assets/double-pendulum/double_pendulum_10sim.gif" alt="GIF 1" width="400"/>
+  <br/> 2 Simulations (left) || 10 Simulations (right)
 </p>
 
+##### 2. Randomized or Perturbed Initial Conditions
 
+- For randomized initial conditions (IC) `case = 1`, adjust the initial angles to generate random values within a specified range (e.g., `initial_position = [np.pi / 4, np.pi / 4]`).
+- For perturbed initial conditions, set `is_perturbed = True` and apply small random changes to the initial angles using a perturbation variable.
 
 <p align="center">
   <img src="./assets/double-pendulum/double_pendulum_10sim_w_perturbation.gif" alt="GIF 1" width="400"/>
   <img src="./assets/double-pendulum/double_pendulum_50sim_w_perturbation.gif" alt="GIF 1" width="400"/>
+  <br/> 10 Simulations with small perturbation 0.01 (left) || 50 Simulations with small perturbation 0.005 (right)
 </p>
 
+##### 3. Customizable Parameters
+
+- The physical parameters such as masses of the pendulums (`m1`, `m2`), gravitational acceleration (`g`), and lengths of the pendulums can be adjusted to explore different motion dynamics of the double pendulum.
 
 <p align="center">
   <img src="./assets/double-pendulum/double_pendulum_1sim_parm1.gif" alt="GIF 1" width="400"/>
   <img src="./assets/double-pendulum/double_pendulum_1sim_parm2.gif" alt="GIF 1" width="400"/>
+  <br/> m1 = 4, m2 = 2, g = 9.81 (left) || m1 = 2, m2 = 2, g = 1.62 (right)
 </p>
 
 
@@ -107,11 +122,15 @@ The N-body problem involves predicting the motion of `n` gravitationally interac
   <img src="./assets/n-body-problem/body_problem_3sim.gif" alt="GIF 1" width="400"/>
 </p>
 
+#### Features
+##### 1. Multiple Simulations
 
+- Several simulations of the N-body problem can be generated to visualize the interactions between different numbers of bodies by modifying the `n_planets` parameter.
 
 <p align="center">
   <img src="./assets/n-body-problem/body_problem_3sim.gif" alt="GIF 1" width="400"/>
   <img src="./assets/n-body-problem/body_problem_10sim.gif" alt="GIF 1" width="400"/>
+  <br/> 3 Planets (left) || 10 Planets (right)
 </p>
 
 
