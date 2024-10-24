@@ -142,6 +142,6 @@ The N-body problem involves predicting the motion of `n` gravitationally interac
 - **/README.md**: This documentation file.
 
 Each folder contains:
-- A mathematical background of the system.
+- A mathematical background of the system, in the form of a notebook.
 - Python scripts that implement the numerical solution (will generate a plot and/or animation showing the system's chaotic evolution).
 - Visualization tools for plotting the system’s behavior.
